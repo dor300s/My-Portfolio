@@ -1,0 +1,34 @@
+body {background-color: black; color:white}
+
+.container{
+    position: absolute;
+    left: 35%;
+    text-align: center;
+}
+
+.cell {width:40px; height:40px;text-align: center}
+.cell img {width:25px; height:auto}
+.floor {background-color: gray}
+.wall {background-color: brown}
+
+.hideElement{
+    display: none;
+}
+
+.resetBtn{
+    color: white;
+    font-size: 40px;
+    background-color: rgb(255, 72, 72);
+    border-width: 0;
+    border-radius: 5px;
+    padding:10px;
+    outline: none;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.resetBtn:hover{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+

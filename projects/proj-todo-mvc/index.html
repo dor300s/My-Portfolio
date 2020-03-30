@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Todos</h1>
+            <button onclick="onAddTodo()"><i class="far fa-edit"></i></button>
+        </div>
+
+        <div class="filter-container">
+            <h2>Filter Todos:
+                <select onchange="onFilterChange(this.value)">
+                    <option value="all">Show All</option>
+                    <option value="active">Active</option>
+                    <option value="done">Done</option>
+                </select>
+            </h2>
+            <h2>Sort By:
+                <select onchange="onSortBy(this.value)">
+                    <option value="txt">Alphabetical</option>
+                    <option value="time">Created Time</option>
+                    <option value="importance">Importance</option>
+                </select>
+            </h2>
+
+        </div>
+        <ul class="todo-list"></ul>
+        <h2 class="todo-stat">
+            Total todos:
+            <span class="total-todos"></span>
+            Active:
+            <span class="active-todos"></span>
+        </h2>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/05eab5fec5.js" crossorigin="anonymous"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+
+</html>

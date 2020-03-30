@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="initGame()" oncontextmenu="return false;">
+
+    <div class="container">
+
+        <h1 class="header">Mine Sweeper</h1>
+
+        <div class="difficulty">
+            <button onclick="chooseLevel('easy')">Easy</button>
+            <button onclick="chooseLevel('medium')">Medium</button>
+            <button onclick="chooseLevel('hard')">Hard</button>
+            <button onclick="toggleManualMode(this)">Manual</button>
+        </div>
+
+        <div class="reset" onclick="resetGame()">😀</div>
+
+        <table>
+            <tbody class="board"></tbody>
+        </table>
+
+        <div class="gameover hide-element"></div>
+    </div>
+
+    <div class="performance">
+        <div class="timer"></div>
+        <div class="score"></div>
+    </div>
+
+    <div class="tools">
+        <div class="lives">💖💖💖</div>
+        <div class="hints clickable" onclick="toggleHint()">💡💡💡</div>
+        <div class="safe-click clickable"onclick="revealSafeCell()">🎁🎁🎁</div>
+    </div>
+
+    <script src="lib/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

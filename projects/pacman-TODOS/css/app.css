@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.container{
+  position: absolute;
+  left: 35%;
+  text-align: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+.hideElement{
+  display: none;
+}
+
+.reset{
+  font-size: 40px;
+  color: white;
+  background-color: rgb(28, 170, 0);
+  border-width: 0;
+  border-radius: 7px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.reset:hover{
+  padding: 8px;
+  font-size: 45px;
+}
+
+.gameOver{
+  font-size: 45px;
+  letter-spacing: 7px;
+}
+
+.ghostsWhenSuper{
+  color: rgb(0, 0, 185);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <table>
+            <tbody class="calculator">
+                <h1>Calculator</h1>
+                <tr>
+                    <td colspan="5" class="display">0</td>
+                </tr>
+                <tr>
+                    <td onclick="memoryClear()">MC</td>
+                    <td onclick="memoryRecall()">MR</td>
+                    <td onclick="memoryStore()">MS</td>
+                    <td onclick="addToMemory()">M+</td>
+                    <td onclick="decFromMemory()">M-</td>
+                </tr>
+                <tr>
+                    <td onclick="backSpace()">⇽</td>
+                    <td onclick="clearAll()">CE</td>
+                    <td onclick="clearCurrentNum()">C</td>
+                    <td onclick="changeSign()">±</td>
+                    <td onclick="sqrt()">√</td>
+                </tr>
+                <tr>
+                    <td onclick="addDigit(this)">7</td>
+                    <td onclick="addDigit(this)">8</td>
+                    <td onclick="addDigit(this)">9</td>
+                    <td onclick="setOp(this)">/</td>
+                    <td onclick="setOp(this)">%</td>
+                </tr>
+                <tr>
+                    <td onclick="addDigit(this)">4</td>
+                    <td onclick="addDigit(this)">5</td>
+                    <td onclick="addDigit(this)">6</td>
+                    <td onclick="setOp(this)">*</td>
+                    <td onclick="setOp(this)">^</td>
+                </tr>
+                <tr>
+                    <td onclick="addDigit(this)">1</td>
+                    <td onclick="addDigit(this)">2</td>
+                    <td onclick="addDigit(this)">3</td>
+                    <td onclick="setOp(this)">-</td>
+                    <td rowspan="2" onclick="result()">=</td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="addDigit(this)">0</td>
+                    <td onclick="addDigit(this)">.</td>
+                    <td onclick="setOp(this)">+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
